@@ -1,6 +1,6 @@
-﻿namespace TaskManagerAPI.Models
+﻿namespace WebTaskManager.Models
 {
-    public class Task
+    public class TaskFile
     {
         public Guid Id { get; set; }
         public string? Title { get; set; }

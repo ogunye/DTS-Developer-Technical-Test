@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/TaskManager/WeatherForecast.cs
+/TaskManager/Controllers/WeatherForecastController.cs

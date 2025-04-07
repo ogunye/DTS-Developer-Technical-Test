@@ -1,12 +1,14 @@
-﻿namespace TaskManagerAPI.Contracts
+﻿using TaskManagerAPI.Models;
+
+namespace TaskManagerAPI.Contracts
 {
     public interface ITaskRepository
     {
-        Task<bool> CreateTask(Task task);
-        Task<bool> UpdateTask(Task task);
+        Task<bool> CreateTask(TaskFile taskFile);
+        Task<bool> UpdateTask(TaskFile taskFile);
         Task<bool> DeleteTask(Guid id);
-        Task<Task?> GetTaskById(Guid id);
-        Task<ICollection<Task>> GetAllTasks();
+        Task<TaskFile?> GetTaskById(Guid id);
+        Task<ICollection<TaskFile>> GetAllTasks();
         Task<bool> Save();
     }
 }
