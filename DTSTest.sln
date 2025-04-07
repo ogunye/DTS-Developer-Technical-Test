@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02E94E08-33D2-4855-AD01-E544D64BA86B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager", "TaskManager\TaskManager.csproj", "{01B40E52-EADD-428E-9200-8475B07C3597}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagerAPI", "TaskManager\TaskManagerAPI.csproj", "{01B40E52-EADD-428E-9200-8475B07C3597}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
