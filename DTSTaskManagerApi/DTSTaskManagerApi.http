@@ -1,0 +1,6 @@
+@DTSTaskManagerApi_HostAddress = http://localhost:5010
+
+GET {{DTSTaskManagerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
