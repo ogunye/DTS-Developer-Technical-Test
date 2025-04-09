@@ -11,6 +11,7 @@ namespace DTSContract
     {
         void AddTask(TaskManager task);
         void DeleteTask(TaskManager task);
+        void UpdateTask(TaskManager task);
         Task<TaskManager?> GetTaskManagerAsync(Guid id, bool trackChanges);
         Task<IEnumerable<TaskManager>> GetAllTaskManagersAsync(bool trackChanges);
     }

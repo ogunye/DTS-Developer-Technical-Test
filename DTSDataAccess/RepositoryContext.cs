@@ -8,7 +8,7 @@ namespace DTSDataAccess
         public RepositoryContext(DbContextOptions<RepositoryContext> options) : base(options)
         {
         }
-        public DbSet<TaskManager> TaskFiles { get; set; }
+        public DbSet<TaskManager> TaskManagers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

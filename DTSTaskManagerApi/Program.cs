@@ -1,7 +1,16 @@
+using DTSTaskManagerApi.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var connectionString = builder.Configuration.GetConnectionString("sqlConnection");
+if (string.IsNullOrEmpty(connectionString))
+{
+    throw new InvalidOperationException("Connection string 'sqlConnection' not found.");
+}
 
+// Add services to the container.
+builder.Services.ConfigureRepositoryLayer();
+builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

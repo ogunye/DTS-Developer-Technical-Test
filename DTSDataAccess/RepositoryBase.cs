@@ -46,6 +46,4 @@ namespace DTSDataAccess
                 RepositoryContext.Set<T>().Where(expression);
         }
     }
-    {
-    }
 }
